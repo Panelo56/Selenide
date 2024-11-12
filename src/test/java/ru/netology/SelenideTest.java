@@ -150,7 +150,7 @@ public class SelenideTest{
         $("[data-test-id='city'] [placeholder='Город']").val("Горно-Алтайск");
         $("[data-test-id='date'] [placeholder='Дата встречи']").click();
         ElementsCollection dates = $$("[class='popup__container'] [data-day]");
-        int days = 14 - 3;
+        int days = 13 + 7;
         int remains;
         int currentWeek = dates.size();
         if (currentWeek < days) {
